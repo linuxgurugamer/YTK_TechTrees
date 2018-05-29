@@ -1,3 +1,6 @@
+﻿0.6.1.1
+	Added the YongeTech_RDIconLoader﻿.dll (was missing)
+	Updated Jenkins
 0.6.1
 	Merged in changes from original author:
 	v1.6

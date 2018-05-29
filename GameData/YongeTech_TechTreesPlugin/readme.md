@@ -1,5 +1,5 @@
 YongeTech Tech Trees Plugin
-version: 1.6
+version: 1.4
 author: yongedevil  
 ============================
 
@@ -13,7 +13,7 @@ Contents
 3.0 Creating a Tech Tree
   3.1 TechTree ConfigNode
   3.2 Custom Icons
-4.0 License
+4.0 Licence
 --------------------------------------
 
 
@@ -21,8 +21,7 @@ Contents
 1.0 Description:
 ----------------
 By itself this mod doesn’t change the technology tree in Kerbal Space Program.  Instead, it adds support for other mods to do so more easily.
-  - Allows PART unlocks to be listed in the TechTree ConfigNode rather than having to edit every Part ConfigNode.
-  - Allows PARTUPGRADE unlocks to be listed in the TechTree ConfigNode rather than having to edit every Part ConfigNode.
+  - Allows part unlocks to be listed in the TechTree ConfigNode rather than having to edit every Part ConfigNode.
   - Adds support for using custom textures to create icons for the tech tree.
   - Adds a tree selection window to let the player select a tree for each new game.
 
@@ -34,7 +33,7 @@ Copy the contents of GameData into the Kerbal GameData folder.
 
   2.1 Known Issues:
   -----------------
-  This mod tracks parts by their name field.  This means if two parts have the same name, only the first will be edited.  
+  This mod tracks parts by their name field.  This means if two parts have the same name, only the first will be editied.
 
   2.2  Install Options:
   ---------------------
@@ -69,8 +68,6 @@ TechTree
       part = standardNoseCone
       part = sensorThermometer
       part = basicFin
-	  
-	  partupgrade = LVT-GasGen-propSys
     }
   }
 
@@ -87,9 +84,7 @@ TechTree
     unlockAllStartParts: If True the mod will automatically unlock all parts in the starting tech node(s), which are any tech nodes with a cost of 0.  This is only relevant if No Entry Purchase Required on Research is disabled in difficulty settings.
 
     3.1.2 Unlocks Node:
-    The Unlocks Node is a new subnode for the RDNode in TechTree.  The Unlocks node has a list of "part" fields containing the names of all the parts unlocked by the RDNode.  The Unlocks node also supports "partupgrade" fields; part upgrades are not used in the stock game but can be found in Porkjet's Stock Engine Overhaul (http://kerbalspaceprogram.com/files/PartOverhauls.zip).
-	
-	The mod will read this data and handle editing the TechRequired on all the parts and part upgrades.
+    The Unlocks Node is a new subnode for the RDNode in TechTree.  The Unlocks node has a list of "part" fields containing the names of all the parts unlocked by the RDNode.  The mod will read this data and handle editing the TechRequired on all the parts.
 
 
   3.2 Custom Icons:
@@ -100,7 +95,7 @@ TechTree
 
 
 ============
-4.0 License:
+4.0 Licence:
 ------------
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
