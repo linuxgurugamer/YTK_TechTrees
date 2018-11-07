@@ -1,12 +1,11 @@
-0.6.1.1
-	Version bump for 1.5 rebuild
-
 0.6.1.2
+	Version bump for 1.5 rebuild
 	Added missing data files
 
 0.6.1.1
 	Added the YongeTech_RDIconLoader﻿.dll (was missing)
 	Updated Jenkins
+
 0.6.1
 	Merged in changes from original author:
 	v1.6
