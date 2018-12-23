@@ -1,7 +1,7 @@
 {
   "NAME": "YongTechTreesPlugin",
   "URL": "http://ksp.spacetux.net/avc/YongeTech_TechTreesPlugin",
-  "DOWNLOAD": "https://github.com/linuxgurugamer/YTK_TechTrees/releases",
+    "DOWNLOAD": "https://github.com/linuxgurugamer/YTK_TechTrees/releases",
   "GITHUB": {
     "USERNAME": "linuxgurugamer",
     "REPOSITORY": "YTK_TechTrees"
@@ -21,5 +21,10 @@
     "MAJOR": 1,
     "MINOR": 5,
     "PATCH": 1
+  },
+  "KSP_VERSION_MAX": {
+    "MAJOR": 1,
+    "MINOR": 5,
+    "PATCH": 99
   }
 }
