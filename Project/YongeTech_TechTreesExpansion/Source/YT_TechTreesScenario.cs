@@ -342,7 +342,7 @@ namespace YongeTechKerbal
         private void ResetTechRequired()
         {
 #if DEBUG
-            Debug.Log("YT_TechTreesScenario.ResetTechRequired");
+            Log.Info("YT_TechTreesScenario.ResetTechRequired");
 #endif
             foreach (KeyValuePair<string, string> partData in YT_TechRequiredDatabase.Instance.Part_OrigonalTechRequired)
             {
@@ -367,7 +367,7 @@ namespace YongeTechKerbal
             foreach(KeyValuePair<string, string> upgradeData in YT_TechRequiredDatabase.Instance.Upgrade_OrigonalTechRequired)
             {
 #if DEBUG
-                Debug.Log("YT_TechTreesScenario.ResetTechRequired: looking at: " + upgradeData.Key);
+                Log.Info("YT_TechTreesScenario.ResetTechRequired: looking at: " + upgradeData.Key);
 #endif
                 PartUpgradeHandler.Upgrade upgrade = PartUpgradeManager.Handler.GetUpgrade(upgradeData.Key);
         
@@ -420,7 +420,7 @@ namespace YongeTechKerbal
         private List<string> GenerateUpgradeNamesList(ConfigNode RDNode)
         {
 #if DEBUG
-            Debug.Log("YT_TechTreesScenario.GenerateUpgradeNamesList");
+            Log.Info("YT_TechTreesScenario.GenerateUpgradeNamesList");
 #endif
             List<string> upgradeNamesList = new List<string>();
             ConfigNode unlocksNode = null;
@@ -437,7 +437,7 @@ namespace YongeTechKerbal
             string upgradeNames = "";
             foreach (string upgradeName in upgradeNamesList)
                 upgradeNames += upgradeName + "\n";
-            Debug.Log("YT_TechTreesScenario.GenerateUpgradeNamesList: generated upgradeNamesList for " + RDNode.GetValue("id") + ":\n" + upgradeNames);
+            Log.Info("YT_TechTreesScenario.GenerateUpgradeNamesList: generated upgradeNamesList for " + RDNode.GetValue("id") + ":\n" + upgradeNames);
 #endif
 
             return upgradeNamesList;
@@ -559,7 +559,7 @@ namespace YongeTechKerbal
             foreach (string partName in partNamesList)
             {
 #if DEBUG
-                Log.Info("YT_TechTreesScenario.ChangeTechRequired: edditing " + partName + " to require " + techID);
+                Log.Info("YT_TechTreesScenario.ChangeTechRequired: editing " + partName + " to require " + techID);
 #endif
                 try
                 {
@@ -581,7 +581,7 @@ namespace YongeTechKerbal
             foreach(string upgradeName in upgradeNamesList)
             {
 #if DEBUG
-                Debug.Log("YT_TechTreesScenario.ChangeTechRequired: editing " + upgradeName + " to require " + techID);
+                Log.Info("YT_TechTreesScenario.ChangeTechRequired: editing " + upgradeName + " to require " + techID);
 #endif
                 //Save the origonal TechRequired to the YT_TechRequiredDatabase
                 YT_TechRequiredDatabase.Instance.CheckAndAddUpgrade(upgradeName, PartUpgradeManager.Handler.GetUpgrade(upgradeName).techRequired);

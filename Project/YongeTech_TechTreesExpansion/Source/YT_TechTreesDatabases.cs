@@ -195,7 +195,7 @@ namespace YongeTechKerbal
 #endif
                 node = config.config;
                 url = "GameData/" + config.parent.url + "." + config.parent.fileExtension;
-
+                Log.Info("YongeTech: url: " + url);
                 //Check if this is the stock tree
                 //use stock tree title and description loaded from mod config file if it is
                 if (url == YT_TechTreesSettings.Instance.StockTree_url)
