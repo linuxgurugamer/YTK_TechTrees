@@ -8,7 +8,8 @@ rem VERSIONFILE is the name of the version file, usually the same as GAMEDATA,
 rem    but not always
 
 set H=%KSPDIR%
-rem set H=R:\KSP_1.12.4_techtree
+set H=R:\KSP_1.12.5-ETT
+set H2=R:\KSP_1.8.1
 
 set GAMEDIR=YongeTech_TechTreesPlugin
 set GAMEDATA="GameData"
@@ -18,5 +19,6 @@ copy /Y "%1%2" "%GAMEDATA%\%GAMEDIR%\Plugins"
 copy /Y %VERSIONFILE% %GAMEDATA%\%GAMEDIR%
 
 xcopy /y /s /I %GAMEDATA%\%GAMEDIR% "%H%\GameData\%GAMEDIR%"
+xcopy /y /s /I %GAMEDATA%\%GAMEDIR% "%H2%\GameData\%GAMEDIR%"
 
 rem pause

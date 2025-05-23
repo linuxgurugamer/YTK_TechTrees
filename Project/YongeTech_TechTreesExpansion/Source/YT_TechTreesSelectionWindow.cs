@@ -298,6 +298,11 @@ namespace YongeTechKerbal
 #if DEBUG_UPDATE
             Log.Info("YT_TechTreesSelectionWindow.DrawWindow()");
 #endif
+            if (m_techTrees.Count == 1)
+            {
+                m_done = true;
+                return;
+            }
             DrawHead();
             DrawTreeDetails();
 

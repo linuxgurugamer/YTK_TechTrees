@@ -1,5 +1,9 @@
 Changelog
 
+0.7.1
+	If only 1 tech tree found, simply uses that and doesn't show the window
+		Note:  Multiple tech trees only work on KSP 1.10 and earlier
+
 0.7.0.1
 	Updated version file to use github for new version info
 	Updated dir paths in project files
